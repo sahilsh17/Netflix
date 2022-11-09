@@ -26,7 +26,9 @@ function Row({ title, fetchURL }) {
       <div className="row__posters">
         {/* {several row posters} */}
         {movies.map(movie => (
-          <img src={`${baseURL}${movie.poster_path}`} alt={movie.name} className="row__poster" />
+          <img
+            key={movie.id}
+            src={`${baseURL}${movie.poster_path}`} alt={movie.name} className="row__poster" />
         ))}
       </div>
     </div>
