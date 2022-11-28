@@ -17,7 +17,7 @@ function Banner() {
   }, [])
 
   function truncate(str, n) {
-
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
   return (
     <header className="banner"
@@ -35,7 +35,7 @@ function Banner() {
         </h1>
         <div className="banner__buttons">
           <button className="banner__button"> Play</button>
-          <button className="button"> My List</button>
+          <button className="banner__button"> My List</button>
 
         </div>
         <h1 className="banner__description">
