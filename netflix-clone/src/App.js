@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import HomeScreen from './screens/HomeScreen';
-import LoginScreen from './LoginScreen';
+import LoginScreen from './screens/LoginScreen';
 import {
   BrowserRouter as Router,
   Routes,
